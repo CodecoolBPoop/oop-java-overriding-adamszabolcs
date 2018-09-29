@@ -3,7 +3,7 @@ package com.codecool.uml.overriding;
 public class CheckoutProcess extends AbstractProcess {
 
     @Override
-    protected Orderable action() {
-        //TODO
+    protected void action(Orderable item) {
+        item.checkout();
     }
 }
