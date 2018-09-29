@@ -1,6 +1,6 @@
 package com.codecool.uml.overriding;
 
-public abstract class AbstractProcess implements Orderable {
+public abstract class AbstractProcess {
 
     public void process(Orderable item) {
         stepBefore();
