@@ -23,6 +23,7 @@ public class Order implements Orderable {
         return false;
     }
 
+
     public boolean pay() {
         if (getStatus().equals("Checkout")) {
             this.status = "Pay";

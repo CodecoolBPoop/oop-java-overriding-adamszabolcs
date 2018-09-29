@@ -4,6 +4,6 @@ public class CheckoutProcess extends AbstractProcess {
 
     @Override
     protected void action(Orderable item) {
-        item.checkout();
+        System.out.println("This is checkout.");
     }
 }
