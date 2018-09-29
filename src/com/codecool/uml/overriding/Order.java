@@ -3,17 +3,22 @@ package com.codecool.uml.overriding;
 public class Order implements Orderable {
 
     private int id;
+    private static int counter = 1;
     private String status;
+
+    public Order() {
+        this.id = counter++;
+    }
 
     public String getStatus() {
         return status;
     }
 
     public boolean checkout() {
-        //TODO
+        this.status = "Checkout";
     }
 
     public boolean pay() {
-        //TODO
+        this.status = "Pay";
     }
 }
