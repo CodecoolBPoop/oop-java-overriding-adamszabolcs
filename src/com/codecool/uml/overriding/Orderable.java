@@ -2,11 +2,7 @@ package com.codecool.uml.overriding;
 
 public interface Orderable {
 
-    default boolean checkout() {
-        //TODO
-    }
+    public boolean checkout();
 
-    default boolean pay() {
-        //TODO
-    }
+    public boolean pay();
 }
