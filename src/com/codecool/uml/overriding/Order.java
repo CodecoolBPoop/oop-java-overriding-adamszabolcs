@@ -18,6 +18,7 @@ public class Order implements Orderable {
     public boolean checkout() {
         if (getStatus().equals("New")) {
             this.status = "Checkout";
+            System.out.println(getStatus());
             return true;
         }
         return false;
@@ -27,6 +28,7 @@ public class Order implements Orderable {
     public boolean pay() {
         if (getStatus().equals("Checkout")) {
             this.status = "Pay";
+            System.out.println(getStatus());
             return true;
         }
         return false;

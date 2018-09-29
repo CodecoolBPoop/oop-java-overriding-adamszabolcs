@@ -5,5 +5,6 @@ public class PaymentProcess extends AbstractProcess {
     @Override
     protected void action(Orderable item) {
         System.out.println("This is payment.");
+        item.pay();
     }
 }
