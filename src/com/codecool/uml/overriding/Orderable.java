@@ -1,4 +1,12 @@
 package com.codecool.uml.overriding;
 
-public class Orderable {
+public interface Orderable {
+
+    default boolean checkout() {
+        //TODO
+    }
+
+    default boolean pay() {
+        //TODO
+    }
 }
