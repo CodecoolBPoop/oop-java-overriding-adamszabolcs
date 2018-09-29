@@ -2,21 +2,22 @@ package com.codecool.uml.overriding;
 
 public abstract class AbstractProcess {
 
-    public Orderable process() {
+    public void process(Orderable item) {
         stepBefore();
-        action();
+        action(item);
         stepAfter();
     }
 
     public void stepBefore() {
-
+        System.out.println("This is the step before");
     }
 
-    protected Orderable action() {
+    protected void action(Orderable item) {
 
     }
 
     public void stepAfter() {
+        System.out.println("This is the step after");
 
     }
 }
