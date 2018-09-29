@@ -8,6 +8,7 @@ public class Order implements Orderable {
 
     public Order() {
         this.id = counter++;
+        this.status = "New";
     }
 
     public String getStatus() {
@@ -15,10 +16,18 @@ public class Order implements Orderable {
     }
 
     public boolean checkout() {
-        this.status = "Checkout";
+        if (getStatus().equals("New")) {
+            this.status = "Checkout";
+            return true;
+        }
+        return false;
     }
 
     public boolean pay() {
-        this.status = "Pay";
+        if (getStatus().equals("Checkout")) {
+            this.status = "Pay";
+            return true;
+        }
+        return false;
     }
 }
