@@ -1,4 +1,9 @@
 package com.codecool.uml.overriding;
 
-public class CheckoutProcess {
+public class CheckoutProcess extends AbstractProcess {
+
+    @Override
+    protected Orderable action() {
+        //TODO
+    }
 }
